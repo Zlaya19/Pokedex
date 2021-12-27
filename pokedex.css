@@ -1,0 +1,235 @@
+@font-face {
+    font-family: 'BPdotsUnicase';
+    src: url('./font/BPdotsUnicase-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'calibri';
+    color: #fff;
+    text-transform: uppercase;
+    /* overflow: hidden; */
+}
+
+body {
+    background: #c14949;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    position: relative;
+    width: 500px;
+    height: 700px;
+    box-shadow: 0 0 25px #111;
+    background: #e84848;
+    border: 3px solid;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    /* border-image: linear-gradient(45deg, rgb(0,143,104), rgb(250,224,66)) 1; */
+    border-image: linear-gradient(45deg,#894a4a, #4f4b4b,#894a4a, #4f4b4b) 1;
+}
+
+#blueLight {
+    position: absolute;
+    background: #23b1c8;
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    border: 5px solid #eee;
+    box-shadow: 0 0 5px 1px #894a4a, inset 0 0 5px 1px #198292;
+    top: 15px;
+    left: 50px;
+}
+
+#yellowLight, #redLight, #greenLight {
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    border: 1px solid #685959;
+    border-radius: 100%;
+}
+
+#yellowLight {
+    top: 20px;
+    left: 160px;
+    background: rgb(240, 240, 20);
+    box-shadow: 0 0 2px 1px #444, inset 0 0 1px rgb(226, 226, 41);
+}
+
+#redLight {
+    top: 20px;
+    left: 190px;
+    background: rgb(235, 35, 35);
+    box-shadow: 0 0 2px 1px #444, inset 0 0 1px rgb(192, 7, 7);
+}
+
+#greenLight {
+    top: 20px;
+    left: 220px;
+    background: rgb(23, 243, 96);
+    box-shadow: 0 0 2px 1px #444, inset 0 0 1px rgb(179, 179, 19);
+}
+
+#avatarContainer {
+    margin-top: 30px;
+    width: 430px;
+    height: 280px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #ddd;
+    /* border: 4px solid #894a4a; */
+    border-radius: 6px 6px 6px 72px;
+    box-shadow: 0 0 5px 1px #333;
+    /* border-image: linear-gradient(45deg,#894a4a, #4f4b4b,#894a4a, #4f4b4b) 1; */
+}
+
+#avatar {
+    width: 350px;
+    height: 200px;
+    border: 4px solid #666;
+    background: #444;
+    box-shadow: 0 0 3px 1px #999, inset 0 0 3px 1px #333;
+    border-radius: 6px 6px 6px 42px;
+}
+
+span {
+    color: #999;
+    font-size: 19.5px;
+}
+
+#content {
+    width: 95%;
+    height: 200px;
+    background: #e84848;
+    box-shadow: 0 0 15px #111;
+    padding: 15px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+    border-radius: 8% 8% 0 0;
+}
+
+#leftDiv {
+    width: 200px;
+    height: 200px;
+}
+
+#control {
+    width: 140px;
+    display: flex;
+    background: #444;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+}
+
+#btnBack, #btnForward, #btnUp, #btnDown {
+    padding: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    color: dodgerblue;
+    background: #444;
+    border-radius: 20px;
+}
+
+#btnBack {
+    border: 2px solid #222;
+    border-right: none;
+}
+
+#btnForward {
+    border: 2px solid #222;
+    border-left: none;
+}
+
+#btnUp {
+    border: 2px solid #222;
+    border-bottom: none;
+    width: 53px;
+}
+
+#btnDown {
+    border: 2px solid #222;
+    border-top: none;
+    width: 53px;
+}
+
+#btnBack:hover, #btnForward:hover {
+    background: rgb(56, 56, 56);
+    text-shadow: 0 0 5px dodgerblue;
+    transition: 0.3s;
+}
+
+
+#btnBack:not(:hover), #btnForward:not(:hover) {
+    transition: 0.3s;
+}
+
+
+.game-board {
+    display: grid;
+    grid-template-rows: 50px 50px 50px;
+    grid-template-columns: 50px 50px 50px;
+}
+
+.box {
+  background: #444;
+  border: 1px solid #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #AAA;
+}
+
+
+@media screen and (max-width: 550px){
+    #content {
+        height: 310px;
+    }
+
+}
+
+@media screen and (max-width: 400px){
+    #avatar {
+        width: 175px;
+        height: 175px;
+    }
+
+    h1 {
+        font-size: 42px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    #btnBack, #btnForward {
+        padding: 12px 20px 16px 20px;
+    }
+}
+
+@media screen and (max-width: 350px){
+    #avatar {
+        width: 150px;
+        height: 150px;
+    }
+}
