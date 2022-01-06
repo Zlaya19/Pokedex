@@ -116,15 +116,63 @@ span {
     padding: 15px 20px;
     text-align: center;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     /* flex-direction: column; */
-    border-radius: 8% 8% 0 0;
+    border-radius: 8% 8% 8% 8%;
 }
 
 #leftDiv {
     width: 200px;
     height: 200px;
+    position: relative;
+}
+
+#btnClass1 {
+    position: absolute;
+    top: 42px;
+    width: 70px;
+    height: 70px;
+    background: #666666;
+    border: 2px solid #333;
+    border-radius: 100%;
+    box-shadow: 0 0 2px #666, 0 0 2px #666;
+}
+
+#btnClass2 {
+    position: absolute;
+    top: 42px;
+    left: 90px;
+    width: 50px;
+    height: 12px;
+    background: #d94a4b;
+    border: 2px solid #333;
+    border-radius: 20px;
+    box-shadow: 0 0 2px #666, 0 0 2px #666;
+}
+
+#btnClass3 {
+    position: absolute;
+    top: 42px;
+    left: 160px;
+    width: 50px;
+    height: 12px;
+    background: #2f9fcd;
+    border: 2px solid #333;
+    border-radius: 20px;
+    box-shadow: 0 0 2px #666, 0 0 2px #666;
+}
+
+#btnClass4 {
+    position: absolute;
+    top: 126px;
+    left: 90px;
+    width: 100px;
+    height: 52px;
+    background: #23b1c8;
+    border: 2px solid #333;
+    border-radius: 8px;
+    box-shadow: 0 0 2px #666, 0 0 2px #666;
 }
 
 #control {
