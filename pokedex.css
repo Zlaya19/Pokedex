@@ -18,7 +18,6 @@
     padding: 0;
     font-family: 'calibri';
     color: #fff;
-    text-transform: uppercase;
     /* overflow: hidden; */
 }
 
@@ -29,6 +28,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-transform: uppercase;
 }
 
 #container {
@@ -92,7 +92,7 @@ body {
     width: 430px;
     height: 280px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     background: #ddd;
     /* border: 4px solid #894a4a; */
@@ -102,17 +102,45 @@ body {
 }
 
 #avatar {
-    width: 350px;
+    width: 200px;
     height: 200px;
     border: 4px solid #666;
     background: #444;
     box-shadow: 0 0 3px 1px #999, inset 0 0 3px 1px #333;
-    border-radius: 6px 6px 6px 42px;
+    border-radius: 6px 0px 0px 42px;
+    border-right: none;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+}
+
+#avatarRight {
+    width: 150px;
+    height: 200px;
+    border: 4px solid #666;
+    border-left: none;
+    background: #444;
+    box-shadow: 0 0 3px 1px #999, inset 0 0 3px 1px #333;
+    border-radius: 0px 6px 6px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    text-transform: capitalize;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+h3 {
+    font-size: 16px;
 }
 
 span {
     color: #999;
-    font-size: 19.5px;
+    font-size: 16px;
 }
 
 #paragraph {
