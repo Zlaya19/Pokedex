@@ -289,38 +289,79 @@ span {
 
 
 @media screen and (max-width: 550px){
-    #content {
-        height: 310px;
+
+    #avatarContainer {
+        width: 87%;
+    }
+
+    #avatar {
+        width: 45%;
+    }
+
+    #avatarRight {
+        width: 35%;
     }
 
 }
 
-@media screen and (max-width: 400px){
-    #avatar {
-        width: 175px;
-        height: 175px;
+@media screen and (max-width: 450px){
+    #btnBack, #btnForward, #btnUp, #btnDown {
+        padding: 5px;
     }
+
+    #control {
+        width: 100px;
+    }
+
+    #btnClass1 {
+        width: 60px;
+        height: 60px;
+    }
+
+    #btnClass2 {
+        width: 40px;
+        
+    }
+
+    #btnClass3 {
+        width: 40px;
+        left: 140px;
+    }
+
+    #btnClass4 {
+        width: 80px;
+        height: 42px;
+    }
+
+    #avatarContainer {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px){
 
     h1 {
         font-size: 42px;
     }
 
     h2 {
-        font-size: 26px;
+        font-size: 20px;
     }
 
     h3 {
-        font-size: 16px;
+        font-size: 15px;
     }
 
-    #btnBack, #btnForward {
-        padding: 12px 20px 16px 20px;
+    #container {
+        width: 100%;
     }
+    
 }
 
 @media screen and (max-width: 350px){
-    #avatar {
-        width: 150px;
-        height: 150px;
+
+    #content {
+        width: 100%;
     }
+
 }
